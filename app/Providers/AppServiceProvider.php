@@ -54,7 +54,7 @@ final class AppServiceProvider extends ServiceProvider
 
     private function configureUrls(): void
     {
-        URL::forceHttps();
+        URL::forceHttps($this->app->isProduction());
     }
 
     private function configureVite(): void

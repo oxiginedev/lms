@@ -1,3 +1,4 @@
+import colors from "tailwindcss/colors";
 import defaultTheme from "tailwindcss/defaultTheme";
 
 /** @type {import('tailwindcss').Config} */
@@ -11,6 +12,9 @@ export default {
     ],
     theme: {
         extend: {
+            colors: {
+                primary: colors.blue,
+            },
             fontFamily: {
                 sans: ["Figtree", ...defaultTheme.fontFamily.sans],
             },
